@@ -96,15 +96,65 @@ li {
     #navbar li:hover ul li a:hover{ /*Defines the most explicit hover states when a user hovers over an individual link.*/
     background-color:black;
     }
+  }
+@media (max-width: 959px) {
 
- @media (max-width: 959px) {
-
-h1 {
-    font-size:1.5rem;
-    }
-article {
-    background-color:beige;
-    min-height:480px;
-    }
- }
+      h1{
+      font-size:1.5rem;
+      color:black; /*I added a font color of black to our <h1> style.*/
+      }
+      
+      article {
+      background-color:beige;
+      min-height:480px;
+      padding:5px; /*I added some padding to our <article> style.*/
+      }
+      
+      /*The following style rules are new*/
+      
+      a{
+      font-size:1.5rem;
+      text-decoration:none;
+      }
+      
+      #navbar{
+      list-style:none;
+      margin-bottom:10px;
+      }
+      
+      #navbar li{
+      position:relative;
+      margin-left:-40px;
+      }
+      
+      #navbar a{
+      font-size:1.25rem;
+      display: block;
+      width: 66%;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: white;
+      background: black;
+      text-decoration: none;
+      border-radius: 1px 5px 5px 1px;
+      }
+      
+      #navbar a:hover{
+      color:yellow;
+      text-decoration:none;
+      }
+      
+      /* hide submenus in mobile devices */
+      
+      #navbar ul li{
+      display:none;
+      }
+      
+      #navbar li:hover a{
+      text-decoration: none;
+      background-color: gray;
+      border-radius: 5px 25px 25px 5px;
+      border-bottom: thin white solid;
+      width:75%;
+      }
 }
