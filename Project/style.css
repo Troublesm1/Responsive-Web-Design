@@ -109,9 +109,7 @@ li {
       min-height:480px;
       padding:5px; /*I added some padding to our <article> style.*/
       }
-      
-      /*The following style rules are new*/
-      
+
       a{
       font-size:1.5rem;
       text-decoration:none;
